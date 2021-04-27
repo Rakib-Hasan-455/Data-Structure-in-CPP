@@ -1,0 +1,46 @@
+infix  expression = a + b = Experession = [ Operend + operator + Operend]
+
+precidence priority:  () {} []
+		      ^	   = Right to left
+		      * /  = Left to right
+		      + -  = left to right
+prefix expression = +ab = [ operator + Operend + Operend]
+
+postfix expression = ab+ = [ Operend + Operend + operator]
+
+Infix to Postfix using Stack:
+
+Ex 1: A + B * C = A + BC* = ABC*+
+
+Scans only one time with stack
+Ex 2: K + L - M * N + (O ^ P) * W / U / V * T + Q
+
+Input Expression     	  Stack   	 Postfix Expression
+K	     	  	,   	 	K 
++	     	  	+   	 	K 
+L	     	  	+   	 	KL 
+-	     	  	-   	 	KL+ 
+M	     	  	-   	 	KL+M 
+*	     	  	-*   	 	KL+M 
+N	     	  	-*    	 	KL+MN
++	     	  	+   	 	KL+MN*-
+(			+(		KL+MN*-
+O	     	  	+(   	 	KL+MN*-O 
+^	     	  	+(^   	 	KL+MN*-O  
+P	     	 	+(^   	 	KL+MN*-OP 
+)	     	  	+*   	 	KL+MN*-OP^
+*	     	  	+*   	 	KL+MN*-OP^
+W	     	  	+*   	 	KL+MN*-OP^W
+/	     	  	+/   	 	KL+MN*-OP^W*
+U	     	  	+/   	 	KL+MN*-OP^W*U
+/	     	  	+/   	 	KL+MN*-OP^W*U/
+V	     	  	+/   	 	KL+MN*-OP^W*U/V
+*	     	  	+*   	 	KL+MN*-OP^W*U/V/
+T			+* 		KL+MN*-OP^W*U/V/T
++			+		KL+MN*-OP^W*U/V/T*+
+Q			+		KL+MN*-OP^W*U/V/T*+Q
+			(+)		KL+MN*-OP^W*U/V/T*+Q+
+ 
+
+
+
