@@ -1,0 +1,4 @@
+Queue is First In (insert)=Back/rear = Enqueue = push = Insert date from back = Point at index front(k) + 1;
+and First Out (delete).Front/head. = dequeue = pop = Delete data from front =  point at front (k)
+
+
