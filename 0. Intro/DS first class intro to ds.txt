@@ -1,0 +1,44 @@
+Data = any data not totally determined.
+Information = any data with specific proper info
+
+Ram Memory =  primary memory
+HDD	   = secondary storage
+
+Data Structure = Logical or mathematical model of a particular organization of data is called a data structure.
+
+Two type:
+1: premitive DS = integer, real, character, boolean
+2: Non-primitive DS :
+	1: Linear DS = Array, linked list, stacks, queue = Sequenced maintained Data
+	2: Non-linear DS = Trees, Graphs = No sequenced maintained Data like relation
+
+
+Stack = Bunch of plates input. first input will be in the bottom. We can delete the last plate.
+Queue = It's kind of linear list. Insert is enqueue from back, Delete is deque from front.
+           Like a line in a counter service  -> back ||||||| <- front
+
+
+Data Structure Operations:
+Traversing : Look at every record .
+Search : to search any data.
+Insert : To inter a data.
+Delete : to remove a data.
+Sorting : Arranging the records in some logical order.
+Marging: Combining the records in two different sorted files into a 
+single sorted file.  Like two file into one file.
+
+
+Abstract Data Types(ADT):
+An abstract data type refers to a set of data values and associated
+operations that are specified accurately, independent of any particular implementation.
+Mainly means, ADTs are entities that are definitions of data and operations but don't have implementation details.
+
+Time Complexity Algorithm:
+Matters,
+Time: The worst case . How fast a program can run.
+Space/Memory: How much it eats the ram/space.
+
+Method:
+Asymptotic Analysis: The average case.
+Big O Notation: The worst case notation.
+
